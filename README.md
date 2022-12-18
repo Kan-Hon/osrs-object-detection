@@ -1,4 +1,4 @@
-# Object Detection in OSRS using Python
+# Object Detection in OSRS using Python and Java
 Object detection using YoloV5 using Python and Java. This post is purely for educational purposes.
 
 In 2019, an OpenAI project known as OpenAI Five claimed the world-first AI system trained to play a complex strategy game, beating the world champion team in a multiplayer video game called Dota 2. Intrigued, I set out to explore the capabilities of AI at playing video games.
