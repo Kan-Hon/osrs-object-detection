@@ -95,7 +95,7 @@ public final class BBCollector extends Script {
         int gridY;
         int gridZ;
         Rectangle entityBoundingBox;
-        labels.add(new ObjectLabel(entityName, entityBoundingBox));
+        labels.add(new ObjectLabel(entityName));
 
     }
     public void saveImage(BufferedImage image, String folder, String filename) {
