@@ -33,3 +33,5 @@ The improved model achieved high precision and recall for all the classes of int
 
 <img src="https://user-images.githubusercontent.com/66121721/208278519-74cb71f1-600e-47f6-816a-f22de818372f.png" alt="Figure 4 - Inference result"  width="600"/>
 
+### Acknowledgements
+1. "YOLOv5 by Ultralytics" - doi: 10.5281/zenodo.3908559
