@@ -22,13 +22,13 @@ I first trained the model on 100 in-game screenshots, teaching the model to iden
 <img src="https://user-images.githubusercontent.com/66121721/208278268-403abffc-a178-4504-a395-76e69e0f34ac.png" alt="Figure 2 - Phase 1 Precision-Recall curve"  width="600"/>
 <em> Figure 2 - Phase 1 Precision-Recall curve </em>
 
-
+\
 The initial model performed well for all the classes except one - "Cow - Unavailable". I hypothesised that this was due to the lack of training examples associated with this class, and collected more in-game screenshots for training. This time, I ensured there were sufficient training samples for all classes.
 
 <img src="https://user-images.githubusercontent.com/66121721/208278430-19163ab3-9346-4b2d-a6c7-99573a841c39.png" alt="Figure 3 - Phase 2 Precision-Recall curve"  width="600"/>
 <em> Figure 3 - Phase 2 Precision-Recall curve </em>
 
-
+\
 The improved model achieved high precision and recall for all the classes of interest, reaching mAP50 of 0.995. The model also attained an average inference speed of 6.9ms per image with GPU support, making it capable of scraping screen data in real-time at 144fps. 
 
 <img src="https://user-images.githubusercontent.com/66121721/208278519-74cb71f1-600e-47f6-816a-f22de818372f.png" alt="Figure 4 - Inference result"  width="600"/>
