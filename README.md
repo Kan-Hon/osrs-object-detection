@@ -12,6 +12,7 @@ To identify objects in the game, I decided to build a object detection model tha
 <img src="https://user-images.githubusercontent.com/66121721/208275066-9158a026-f8ad-4aad-9f0c-ebec87f7950c.png" alt="Figure 1 - Screen scraping example"  width="400"/>
 <em> Figure 1 - Screen scraping example  </em>
 
+
 ### Modelling 
 
 I have chosen YoloV5 as the object detection model for this project, due to its efficiency and speed to achieve a respectable fps during inference for my PC specifications (Nvidia RTX 3060Ti 8GB). 
@@ -21,10 +22,12 @@ I first trained the model on 100 in-game screenshots, teaching the model to iden
 <img src="https://user-images.githubusercontent.com/66121721/208278268-403abffc-a178-4504-a395-76e69e0f34ac.png" alt="Figure 2 - Phase 1 Precision-Recall curve"  width="600"/>
 <em> Figure 2 - Phase 1 Precision-Recall curve </em>
 
+
 The initial model performed well for all the classes except one - "Cow - Unavailable". I hypothesised that this was due to the lack of training examples associated with this class, and collected more in-game screenshots for training. This time, I ensured there were sufficient training samples for all classes.
 
 <img src="https://user-images.githubusercontent.com/66121721/208278430-19163ab3-9346-4b2d-a6c7-99573a841c39.png" alt="Figure 3 - Phase 2 Precision-Recall curve"  width="600"/>
 <em> Figure 3 - Phase 2 Precision-Recall curve </em>
+
 
 The improved model achieved high precision and recall for all the classes of interest, reaching mAP50 of 0.995. The model also attained an average inference speed of 6.9ms per image with GPU support, making it capable of scraping screen data in real-time at 144fps. 
 
